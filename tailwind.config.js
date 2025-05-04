@@ -46,28 +46,54 @@ export default {
         sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
         serif: ['Cormorant Garamond', 'ui-serif', 'Georgia'],
       },
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.75s ease-in-out',
-        'slide-up': 'slideUp 0.75s ease-in-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.neutral.800'),
+            a: {
+              color: theme('colors.primary.600'),
+              '&:hover': {
+                color: theme('colors.primary.800'),
+              },
+            },
+          },
         },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+        invert: {
+          css: {
+            color: theme('colors.neutral.200'),
+            a: {
+              color: theme('colors.primary.400'),
+              '&:hover': {
+                color: theme('colors.primary.300'),
+              },
+            },
+            h1: {
+              color: theme('colors.neutral.100'),
+            },
+            h2: {
+              color: theme('colors.neutral.100'),
+            },
+            h3: {
+              color: theme('colors.neutral.100'),
+            },
+            h4: {
+              color: theme('colors.neutral.100'),
+            },
+            strong: {
+              color: theme('colors.neutral.100'),
+            },
+            code: {
+              color: theme('colors.neutral.100'),
+            },
+            blockquote: {
+              color: theme('colors.neutral.100'),
+            },
+          },
         },
-      },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

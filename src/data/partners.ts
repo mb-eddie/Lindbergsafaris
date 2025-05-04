@@ -4,31 +4,31 @@ export const partners: Partner[] = [
   {
     id: 1,
     name: 'Kenya Tourism Board',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/kenya-tourism-board.png'
   },
   {
     id: 2,
     name: 'Magical Kenya',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/magical-kenya.jpeg'
   },
   {
     id: 3,
     name: 'Emirates',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/emirates.jpeg'
   },
   {
     id: 4,
     name: 'Costa Cruises',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/costa.jpeg'
   },
   {
     id: 5,
     name: 'Wings',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/wings.jpeg'
   },
   {
     id: 6,
     name: 'Legend Tours',
-    logo: 'https://images.pexels.com/photos/881294/pexels-photo-881294.jpeg'
+    logo: '/images/partners/legends.jpeg'
   }
 ];
